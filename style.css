@@ -1,0 +1,159 @@
+/* first i have started universal selector to set whole page common stylings like padding ,margin and box-sizing etc.... */
+* {
+    box-sizing: border-box;
+  }
+/*  background image  */
+/* background image ,background color etc .. for hole webpage is defined in body tag  */
+/* as common i have used body tag for background styling ,html tag also used instead of body both works same */
+body {
+    background-image: url("https://source.unsplash.com/random?forest");
+    /* i had set the background image  to cover whole page with out repeatin in  */
+    /* i used this attribute to cover the image whole page without repeat */
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    /* font used same for whole page */
+    /* use of common font for whole page looks better */
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+  }
+  /* header tags styling */
+/* i had set the header in center of page and i also kept icon after it */
+  header{
+      font-size: 70px;
+      background-color: darkslategray;
+      text-align: center;
+  }
+  /* i have given 50px for city cause it have to look slight big then others ,mainly user concentrate on main things */
+  #city {
+    font-size: 50px;
+  }
+  /* iam giving center attribute to whole information to set them in center in order being in zigzag */
+  /* and also given position relative */
+  .info {
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    top: 12px;
+    font-size: 20px;
+    color: #5b3625;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+  /* styling button with slight deference as common  */
+  button {
+    display: inline;
+    margin-top: -2px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+  }
+  /* given size to icon over size makes other info spread so far so 55px in enough */
+  img {
+    width: 55px;
+  }
+  
+  small{
+    margin-left: 80px;
+    color: #ffffff;
+  }
+  /* styling search bar i gaven shadow for it  */
+  .form-control {
+    display: inline;
+    margin-top: 18px;
+    /* 0.2 makes the box much transparent when focused*/
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+  }
+/* complete styling weather forecast container */
+  #circle {
+    /* i can use max width for container but it looks bad when page in desktop mode  */
+    width: 450px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3px 8px 20px rgba(148, 142, 142, 0.938);
+    /* this attribute makes the container slight blur upto 5px foccus */
+    backdrop-filter: blur(5px);
+  }
+  /* stylings for 7 days forecast  */
+  /* usally the card tage makes the background white so i used transparent level for that card   */
+  .card-group {
+    align-items: center;
+    margin-top: 35px;
+    box-shadow: 3px 8px 20px rgba(49, 45, 45, 0.938);
+    color: #5b3625;
+    font-weight: 600;
+    margin-bottom: -10px;
+  }
+  .card {
+    background: rgba(245, 239, 239, 0.6);
+    backdrop-filter: blur(10px);
+    margin-top:auto;
+  }
+  /* styling for icons default icon's stylings */
+  .fa-sun {
+    color: #e9c999;
+    text-align: center;
+  }
+  .fa-cloud {
+    color: gray;
+  }
+
+  .openSource{
+    text-decoration: none;
+    color: #feae2e;
+  }
+  #weather-condition {
+    text-transform: capitalize;
+  }
+  /* attributes for unit symbol when they are in active the color changes when they are active */
+  .active {
+    color: #5b3625;
+    cursor: default;
+    text-decoration: none;
+  }
+  .units .active:hover {
+    color: #5b3625;
+    text-decoration: none;
+  }
+  #degree {
+    font-size: 40px;
+  }
+  /* defualt styling is used for units my thought is to change only unit so i kept the unit common for both units after or before active */
+  #fahrenheit {
+    position: relative;
+    font-size: 20px;
+    top: -14px;
+    text-decoration: none;
+  }
+  #celsius {
+    position: relative;
+    font-size: 20px;
+    top: -14px;
+    text-decoration: none;
+  }
+  
+  .minTemp {
+    opacity: 0.6;
+  }
+  .info img{
+     border-style:solid;
+      border-radius: 20px ;
+      background-color: rgb(59, 53, 53,0.4);
+      font-size: 50px;
+  }
+  footer{
+      background-color: #3b3b3ad0;
+      backdrop-filter: blur(8px);
+      color:white;
+      border-radius:10px;
+      width:100%;
+      text-align:center;
+      font-size: 10px;
+      font-weight:200;
+      line-height: 8px;
+  }

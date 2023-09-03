@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags that adjust the web according to device -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- sources i have used in  -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/515640d61a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- title of the page -->
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- creating the header tag for the page-->
+    <header>WEATHER-FORECAST<i class="bi bi-cloud-sun-fill"></i></header>
+    <!-- creating container for show casing the weather forecast -->
+    <div class="container">
+    <form id="search-form">
+        <!-- alignment manually without css to get accurate center  -->
+        <div class="fetch" align="center">
+            <!-- search bar with place holder :Type a City name, zipcode , in this autocompletion is off so user should enter complete requirement   -->
+        <input type="text" class="form-control" autocomplete="off" autofocus="on" id="search-city-input"
+            placeholder="Type a City name, zipcode  " style="width: 80%;" />
+<!-- button with searching icon used for search prefer location. its focused when the corsur pointed on -->
+            <button type="submit" class="btn btn-warning">
+
+            <i class="fas fa-search"></i>
+        </button>
+        <!-- button with location symbol used to check current location -->
+        <button type="button" class="btn btn-warning"> <i class="fas fa-map-marker-alt" id="user-location"></i>
+        </button>
+    </div>
+    </form><br><br>
+        <h2>
+            <!-- elements for weather every element in website is placed here  -->
+            <!-- i have taken min requirements only like humidity and wind speed etc..  , no extra elements cause min info is understandable to users -->
+            <div id="circle">
+                <div class="info">
+                    <div id="city"></div>
+                    <span id="degree"></span>
+                    <span class="units">
+                        <!-- this anchor link is used to change the units (F-C or C-F) this option i used in order of button, it saved the styling preference  -->
+                        <a href="#" id="celsius" class="active">°C |</a><a href="#" id="fahrenheit">°F</a>
+              </span>
+                    <br />
+                    <span id="weather-condition"></span>
+                    <br />
+
+                    <span> <img id="icon"> </span>
+                    <br />
+                    <span id="date"></span>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind: <span id="wind"></span> km/h </p>
+                </div>
+            </div>
+            
+        </h2>
+        <div id="forecast"></div>
+        </div>
+    </div><br><br>
+    <!-- footer tags with dev details its mandatory -->
+    <footer>
+        <p1>developed by:Madhavi Pulivarthi</p1><br><br>
+
+        <p2>&#169reserved</p2>
+        <br><br>
+        <p3>it's prepared by reference of many sources which are some already in public   and internships </p3>
+    </footer>
+</body>
+</html>
+
+<!-- less html data is enough to creat the front webpage the elongation in html data makes more time to verify the bugs  -->
